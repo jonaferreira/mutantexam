@@ -1,0 +1,44 @@
+2019-Sep-11 20:06:18.224 ERROR [main] o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'INFO, DEBUG' for 'null'
+2019-Sep-11 20:06:18.356 INFO  [main] com.ml.mutantexam.MutantexamApplication - Starting MutantexamApplication on NBI660487 with PID 7904 (C:\WorkspacesIDE\MELI\mutantexam\target\classes started by B040650 in C:\WorkspacesIDE\MELI\mutantexam)
+2019-Sep-11 20:06:18.357 INFO  [main] com.ml.mutantexam.MutantexamApplication - No active profile set, falling back to default profiles: default
+2019-Sep-11 20:06:19.218 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-Sep-11 20:06:19.251 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-Sep-11 20:06:19.693 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$294588ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-Sep-11 20:06:21.036 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-Sep-11 20:06:21.071 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-Sep-11 20:06:21.072 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-Sep-11 20:06:21.234 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-Sep-11 20:06:21.312 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2019-Sep-11 20:06:21.318 INFO  [main] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-Sep-11 20:06:21.334 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-Sep-11 20:06:21.337 ERROR [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2019-Sep-11 20:06:41.824 ERROR [main] o.s.b.context.logging.LoggingApplicationListener - Cannot set level 'INFO, DEBUG' for 'null'
+2019-Sep-11 20:06:41.917 INFO  [main] com.ml.mutantexam.MutantexamApplication - Starting MutantexamApplication on NBI660487 with PID 9240 (C:\WorkspacesIDE\MELI\mutantexam\target\classes started by B040650 in C:\WorkspacesIDE\MELI\mutantexam)
+2019-Sep-11 20:06:41.919 INFO  [main] com.ml.mutantexam.MutantexamApplication - No active profile set, falling back to default profiles: default
+2019-Sep-11 20:06:43.952 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2019-Sep-11 20:06:43.994 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-Sep-11 20:06:43.994 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-Sep-11 20:06:44.139 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-Sep-11 20:06:44.354 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-Sep-11 20:06:44.573 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2019-Sep-11 20:06:44.576 INFO  [main] com.ml.mutantexam.MutantexamApplication - Started MutantexamApplication in 3.1 seconds (JVM running for 3.61)
