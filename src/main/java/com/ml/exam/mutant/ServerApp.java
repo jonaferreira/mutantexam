@@ -1,7 +1,8 @@
-package com.ml.mutantexam;
+package com.ml.exam.mutant;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,14 +12,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Jonathan Ivan Ferreira
  */
 @SpringBootApplication
-public class MutantexamApplication {
+public class ServerApp {
 	
-	private static final Logger logger = LoggerFactory.getLogger(MutantexamApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(ServerApp.class);
 	
 	public static void main(String[] args) {
 		logger.info("--Application Started--");
 		
-		SpringApplication.run(MutantexamApplication.class, args);
+		SpringApplication.run(ServerApp.class, args);
 	}
-
 }

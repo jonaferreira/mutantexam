@@ -1,0 +1,23 @@
+<html>
+<h2>Error 405</h2></br>
+El servicio no soporta metodo request GET. Debe enviar un request Json por request POST.</br><br />
+
+Para entrar al servicio “/mutant/” se debe enviar una secuencia ADN mediante un HTTP POST a esta URL:</br>
+ 
+https://ml-mutanexam.herokuapp.com/mutant <br /><br />
+
+Request body. La secuencia ADN debe tener el siguiente formato JSON: <br />
+POST -> /mutant/ <br />
+<br />
+{ <br />
+   "dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"] <br />
+}<br />
+<br />
+
+Response:<br />
+  200 OK
+<br />
+<br />
+  Revisar la documentacion en README.md</br>
+
+</html>
