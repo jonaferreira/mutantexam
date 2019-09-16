@@ -5,9 +5,9 @@
 - [Alcance](#alcance)
 - [Digrama secuencial del proyecto](#digrama-secuencial-del-proyecto)
 - [Implementacion y Tecnologias usadas](#implementacion-y-tecnologias-usadas)
-- [Comentarios relevantes] (#comentarios-relevantes)
-- [Acceso a la API REST productivo] (#acceso-a-la-api-rest-productivo)
-- [Instrucciones para levantar la API REST de manera local] (#instrucciones-para-levantar-la-api-rest-de-manera-local)
+- [Comentarios relevantes](#comentarios-relevantes)
+- [Acceso a la API REST productivo](#acceso-a-la-api-rest-productivo)
+- [Instrucciones para levantar la API REST de manera local](#instrucciones-para-levantar-la-api-rest-de-manera-local)
   - [Pre requisitos](#pre-requisitos)
   - [Configuracion](#configuracion)
   - [Ejecucion](#ejecucion)  
@@ -16,7 +16,7 @@
 
 ## Especificaciones:
 El proyecto consiste en una API REST que determina si un adn humano es un mutante basandose en mas de una determinada secuencia de genes.
-Se puede encontrar el enunciado en el siguiente [link] (https://github.com/jonaferreira/mutantexam/blob/master/doc/Challenge_MeLi_BE-Mutantes.pdf) 
+Se puede encontrar el enunciado en el siguiente [link](https://github.com/jonaferreira/mutantexam/blob/master/doc/Challenge_MeLi_BE-Mutantes.pdf) 
 
 ## Alcance:
 * El API REST contará con dos servicios web.
@@ -30,17 +30,17 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 
 ## Digrama secuencial del proyecto:
 * Servicio Mutant
-![secuence_diagram-Mutant] (https://raw.githubusercontent.com/jonaferreira/mutantexam/master/doc/diagrams/secuence_diagram-Mutant.jpg)
+![secuence_diagram-Mutant](https://raw.githubusercontent.com/jonaferreira/mutantexam/master/doc/diagrams/secuence_diagram-Mutant.jpg)
 
 * Servicio Stats
-![secuence_diagram-Stats] (https://raw.githubusercontent.com/jonaferreira/mutantexam/master/doc/diagrams/secuence_diagram-Stats.jpg)
+![secuence_diagram-Stats](https://raw.githubusercontent.com/jonaferreira/mutantexam/master/doc/diagrams/secuence_diagram-Stats.jpg)
 
 ## Implementacion y Tecnologias usadas:
 * El proyecto está desarrollado en  [java 1.8.](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
 * Se utilizá Maven para la gestión de dependencias y actividades de instalación, build y packaging.
 * Para ayudarme a construir la aplicación use la tecnología [Spring Boot](https://spring.io/) versión 1.5.6.RELEASE.
 * La base de datos que uso es [PostgreSQL](https://www.postgresql.org/) version 9.
-* Para los tests se uso [JUnit](http://junit.org/junit5/) y [Mockito] (http://site.mockito.org/).
+* Para los tests se uso [JUnit](http://junit.org/junit5/) y [Mockito](http://site.mockito.org/).
 * Para hostear la aplicacion use cloud computing [Heroku] (https://www.heroku.com/).
 * Para el parseo de los datos en formato Json uso [Gson](https://github.com/google/gson) 
 * Como sistema de logs uso [Log4j](https://logging.apache.org/log4j/2.x/) 
