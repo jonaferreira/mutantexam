@@ -13,6 +13,7 @@
   - [Ejecucion](#ejecucion)  
 - [Test](#test)
   - [Cobertura](#cobertura)
+- [Mejoras](#mejoras)
 
 ## Especificaciones:
 El proyecto consiste en una API REST que determina si un adn humano es un mutante basandose en mas de una determinada secuencia de genes.
@@ -39,9 +40,9 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 * El proyecto está desarrollado en  [java 1.8.](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
 * Se utilizá Maven para la gestión de dependencias y actividades de instalación, build y packaging.
 * Para ayudarme a construir la aplicación use la tecnología [Spring Boot](https://spring.io/) versión 2.1.8.RELEASE.
-* La base de datos que uso es [PostgreSQL](https://www.postgresql.org/) version 9.
+* La base de datos que uso es [PostgreSQL](https://www.postgresql.org/) version 11.
 * Para los tests se uso [JUnit](http://junit.org/junit5/) y [Mockito](http://site.mockito.org/).
-* Para hostear la aplicacion use cloud computing [Heroku] (https://www.heroku.com/).
+* Para hostear la aplicacion use el hosting cloud computing [Heroku] (https://www.heroku.com/).
 * Para el parseo de los datos en formato Json uso [Gson](https://github.com/google/gson) 
 * Como sistema de logs uso [Log4j](https://logging.apache.org/log4j/2.x/) 
 
@@ -91,7 +92,7 @@ Response: 200 (application/json)
 ## Instrucciones para levantar la API REST de manera local: 
 
 ### Pre requisitos:
-* Se debe contar con motor de base de datos PostgreSQL version 9.2 o superior
+* Se debe contar con motor de base de datos PostgreSQL version 11 o superior
 * Tener mvn instalado en su ambiente, 3.6.1 o posterior.
 * Tener un JDK versión 1.8.
 * Y tener instalado el Git.
@@ -120,3 +121,7 @@ Ejecutando los test localmente con la herramienta Jacoco nos da 97%.
 
 ![coverage](./doc/coverage/coverage.JPG)
 
+## Mejoras:
+Como mejora en la próximo release es "dockelizar" esta aplicación.
+Se comenzo haciendo un docker componse, ubicado en la raiz de este versionado, [link](https://github.com/jonaferreira/mutantexam/blob/master/docker-compose.yml) . En el cual genera a partir del Dokerfile una imagen con el jar que corre con java 1.8 y baja la imagen de docker postgres:11
+Y como otro proceso de mejora es cambiar la base de datos por Mongo. No se realizo de una esta mejora ya que cloud computing [Heroku] (https://www.heroku.com/) no me deba la opción de esta base no relacional.
