@@ -48,10 +48,10 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 
 
 ## Comentarios relevantes
-Cuando tome la decicion de usar como cloud computing Heroku, entendí que para hacer el deploy de la aplicacion debía usar maven, PostgreSQL y que sea una aplicacion stand alone.
-Es por eso que investigue, y la tecnologia que mejor se ajustaba a los conocimientos que tengo y ayudaba hacer una aplicacion stand alone era SpringBoot. Ademas que me dio la oportunidad de aprender y a usar una nueva tecnologia, que combina conocientos que poseo sobre Spring, Hibernate, Log4j y Maven. La version de SpringBoot que use fue 2.1.8.RELEASE .
+Cuando tome la decisión de usar como hosting cloud computing Heroku, entendí que para hacer el deploy de la aplicacion debía usar maven, PostgreSQL y que sea una aplicacion stand alone.
+Es por eso que elegí como tecnologias para desarrollar esta aplicacion SpringBoot 2.1.8.RELEASE. Baje de la pagina oficial de SpringBoot un modelo base de la pagina [link](https://start.spring.io/) que contenia los conocientos principales que poseo Spring, Hibernate, Log4j y Maven.
 
-Al comenzar de desarrollar el ejercicio lo fui haciendo aplicando la tecnica TDD. En el cual hacia las pruebas y luego implementaba el codigo para que funcione las pruebas. En este punto use JUnit y use Mockito para simular respuestas.
+El desarrollo de este challenge fue aplicando, como técnica principal, TDD. En el cual hacia las pruebas y luego implementaba el codigo para que funcione las pruebas. En este punto use JUnit y use Mockito para simular respuestas.
 
 Los conceptos basicos de este framework use la [documentacion oficial de SpringBoot](https://docs.spring.io/spring-boot/docs/current/reference/html/index.html) y 
 [tutorial](https://spring.io/guides/gs/spring-boot/ ).
