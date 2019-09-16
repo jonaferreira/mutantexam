@@ -42,7 +42,7 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 * Para ayudarme a construir la aplicación use la tecnología [Spring Boot](https://spring.io/) versión 2.1.8.RELEASE.
 * La base de datos que uso es [PostgreSQL](https://www.postgresql.org/) version 11.
 * Para los tests se uso [JUnit](http://junit.org/junit5/) y [Mockito](http://site.mockito.org/).
-* Para hostear la aplicacion use el hosting cloud computing [Heroku] (https://www.heroku.com/).
+* Para hostear la aplicacion use el hosting cloud computing [Heroku](https://www.heroku.com/).
 * Para el parseo de los datos en formato Json uso [Gson](https://github.com/google/gson) 
 * Como sistema de logs uso [Log4j](https://logging.apache.org/log4j/2.x/) 
 
@@ -124,4 +124,4 @@ Ejecutando los test localmente con la herramienta Jacoco nos da 97%.
 ## Mejoras:
 Como mejora en la próximo release es "dockelizar" esta aplicación.
 Se comenzo haciendo un docker componse, ubicado en la raiz de este versionado, [link](https://github.com/jonaferreira/mutantexam/blob/master/docker-compose.yml) . En el cual genera a partir del Dokerfile una imagen con el jar que corre con java 1.8 y baja la imagen de docker postgres:11
-Y como otro proceso de mejora es cambiar la base de datos por Mongo. No se realizo de una esta mejora ya que cloud computing [Heroku] (https://www.heroku.com/) no me deba la opción de esta base no relacional.
+Y como otro proceso de mejora es cambiar la base de datos por Mongo. No se realizo de una esta mejora ya que cloud computing [Heroku](https://www.heroku.com/) no me deba la opción de esta base no relacional.
