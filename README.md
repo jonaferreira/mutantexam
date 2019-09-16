@@ -16,7 +16,7 @@
 
 ## Especificaciones:
 El proyecto consiste en una API REST que determina si un adn humano es un mutante basandose en mas de una determinada secuencia de genes.
-Se puede encontrar el enunciado en el siguiente [link] (./doc/Challenge_MeLi_BE-Mutantes.pdf) 
+Se puede encontrar el enunciado en el siguiente [link] (https://github.com/jonaferreira/mutantexam/blob/master/doc/Challenge_MeLi_BE-Mutantes.pdf) 
 
 ## Alcance:
 * El API REST contará con dos servicios web.
@@ -30,10 +30,10 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 
 ## Digrama secuencial del proyecto:
 * Servicio Mutant
-![secuence_diagram-Mutant] (./doc/diagrams/secuence_diagram-Mutant.jpg)
+![secuence_diagram-Mutant] (https://raw.githubusercontent.com/jonaferreira/mutantexam/master/doc/diagrams/secuence_diagram-Mutant.jpg)
 
 * Servicio Stats
-![secuence_diagram-Stats] (./doc/diagrams/secuence_diagram-Stats.jpg)
+![secuence_diagram-Stats] (https://raw.githubusercontent.com/jonaferreira/mutantexam/master/doc/diagrams/secuence_diagram-Stats.jpg)
 
 ## Implementacion y Tecnologias usadas:
 * El proyecto está desarrollado en  [java 1.8.](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
