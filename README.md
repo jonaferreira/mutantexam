@@ -38,7 +38,7 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 ## Implementacion y Tecnologias usadas:
 * El proyecto está desarrollado en  [java 1.8.](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
 * Se utilizá Maven para la gestión de dependencias y actividades de instalación, build y packaging.
-* Para ayudarme a construir la aplicación use la tecnología [Spring Boot](https://spring.io/) versión 1.5.6.RELEASE.
+* Para ayudarme a construir la aplicación use la tecnología [Spring Boot](https://spring.io/) versión 2.1.8.RELEASE.
 * La base de datos que uso es [PostgreSQL](https://www.postgresql.org/) version 9.
 * Para los tests se uso [JUnit](http://junit.org/junit5/) y [Mockito](http://site.mockito.org/).
 * Para hostear la aplicacion use cloud computing [Heroku] (https://www.heroku.com/).
