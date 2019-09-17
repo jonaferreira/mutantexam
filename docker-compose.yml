@@ -14,12 +14,6 @@ services:
         restart: always
         depends_on:
             - db # This service depends on mysql. Start that first.
-        environment: # Pass environment variables to the service
-            SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/mutantexamdb
-            SPRING_DATASOURCE_USERNAME: postgres
-            SPRING_DATASOURCE_PASSWORD: admin 
-        networks: # Networks to join (Services on the same network can communicate with each other using their name)
-            - backend
     db:
         image: "postgres:11"
         container_name: "postgres11"
@@ -32,14 +26,6 @@ services:
             - POSTGRES_PASSWORD=admin
             - POSTGRES_DB=mutantexamdb
             - PGDATA=/var/lib/postgresql/data/pgdata
-        networks: # Networks to join (Services on the same network can communicate with each other using their name)
-            backend:
-                aliases:
-                    - postgreshost
 
 volumes:
     db-data:
-
-networks:
-    backend:
-        driver: bridge
