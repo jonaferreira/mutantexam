@@ -2,7 +2,7 @@ language: java
 
 jdk: openjdk8
 
-sudo: false # faster builds
+sudo: false # faster builds test
 before_install:
  - chmod +x ./gradlew
 
