@@ -4,7 +4,7 @@ jdk: openjdk8
 
 sudo: false # faster builds
 before_install:
- - chmod +x ./gradlew
+ - chmod +x ./mvnw
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
