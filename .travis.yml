@@ -2,6 +2,11 @@ language: java
 
 install: mvn -DskipTests -Dgpg.skip install
 
+before_install:
+ - chmod +x 
+ 
+script: ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   
