@@ -1,5 +1,7 @@
 # ![Magneto_image](doc/images/villain.png) Proyecto deteccion de mutantes 
 
+[![Build Status](https://travis-ci.com/jonaferreira/mutantexam.svg?branch=master)](https://travis-ci.com/jonaferreira/mutantexam) 
+
 ## Indice:
 - [Especificaciones](#especificaciones)
 - [Alcance](#alcance)
