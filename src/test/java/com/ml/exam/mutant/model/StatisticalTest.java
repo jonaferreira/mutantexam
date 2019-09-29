@@ -6,14 +6,14 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import com.ml.exam.mutant.controller.dto.DnaDTO;
 import com.ml.exam.mutant.dao.entity.Dna;
 import com.ml.exam.mutant.dao.impl.DnaDAO;
 import com.ml.exam.mutant.model.util.StatusCode;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.Silent.class)
 public class StatisticalTest {
 	
 	@InjectMocks
