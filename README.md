@@ -47,6 +47,7 @@ Por ejemplo: {"count_mutant_dna":40, "count_human_dna":100, "ratio":0.4}
 * Para hostear la aplicacion use el hosting cloud computing [Heroku](https://www.heroku.com/).
 * Para el parseo de los datos en formato Json uso [Gson](https://github.com/google/gson) 
 * Como sistema de logs uso [Log4j](https://logging.apache.org/log4j/2.x/) 
+* Se utiliza las herramientas de [Docker Desktop]  (https://www.docker.com/products/docker-desktop) version 2.1.0.3
 
 
 ## Comentarios relevantes
@@ -108,7 +109,7 @@ git clone https://github.com/jonaferreira/mutantexam.git
 2. Debe crearse una base de datos en PostgresQL con nombre "mutantexamDB" , con permisos de escritura y lectura, y el puerto 5432. 
 Nota: Puede configurar el usuario y contraseña en el archivo application.properties ubicado en src/main/resources
 
-2.bis En caso de usar docker, y no instalarse postgreSQL, posicionarse en el directorio del proyecto descargado y ejecutar en un cmd el siguiente comando:
+2. (bis) En caso de usar docker, y no instalarse postgreSQL, posicionarse en el directorio del proyecto descargado y ejecutar en un cmd el siguiente comando:
 ```
 docker-compose up -d db
 ```
