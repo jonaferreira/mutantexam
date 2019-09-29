@@ -94,7 +94,7 @@ Response: 200 (application/json)
 ## Instrucciones para levantar la API REST de manera local: 
 
 ### Pre requisitos:
-* Se debe contar con motor de base de datos PostgreSQL version 11 o superior
+* Se debe contar con motor de base de datos PostgreSQL version 11 o superior .
 * Tener mvn instalado en su ambiente, 3.6.1 o posterior.
 * Tener un JDK versión 1.8.
 * Y tener instalado el Git.
@@ -108,6 +108,10 @@ git clone https://github.com/jonaferreira/mutantexam.git
 2. Debe crearse una base de datos en PostgresQL con nombre "mutantexamDB" , con permisos de escritura y lectura, y el puerto 5432. 
 Nota: Puede configurar el usuario y contraseña en el archivo application.properties ubicado en src/main/resources
 
+2.bis En caso de usar docker, y no instalarse postgreSQL, posicionarse en el directorio del proyecto descargado y ejecutar en un cmd el siguiente comando:
+```
+docker-compose up -d db
+```
 3. Posicionarse en el directorio del proyecto y correr ```mvn clean install``` desde una terminal para descargar todas sus dependencias.
 
 ### Ejecucion:
@@ -117,6 +121,61 @@ Nota: Puede configurar el usuario y contraseña en el archivo application.proper
 Para la ejecucion de los test automaticos utilice JUnit y use framework Mockito para realizar pruebas .
 
 - Para ejecutar las pruebas se puede ir al directorio del proyecto y correr el siguiente comando: ```mvn test```
+
+## Levantar el ambiente solamente con docker
+
+### Pre requisitos:
+* Se debe contar con tener instalado docker version 19.03.2
+* Tener instalado docker-compose version 1.24.1
+* Tener mvn instalado en su ambiente, 3.6.1 o posterior.
+* Tener un JDK versión 1.8.
+* Y tener instalado el Git.
+
+### Configuracion:
+1. En un directorio clonar el proyecto 
+```
+git clone https://github.com/jonaferreira/mutantexam.git
+```
+
+2. Posicionarse en el directorio del proyecto y correr ```mvn clean install -Dmaven.test.skip=true``` desde una terminal para descargar todas sus dependencias.
+
+3. Posicionarse en el directorio del proyecto descargado y ejecutar en un cmd el siguiente comando:
+```
+docker-compose up -d
+```
+
+
+### Acceder al proyecto de manera local:
+Acceso a la API REST productivo:
+- Modos de acceso a la API REST localhost
+ * Para entrar al servicio “/mutant/” se debe enviar una secuencia ADN mediante un HTTP POST a esta URL:</br>
+ 
+http://localhost:8080/mutant <br />
+
+Request body. La secuencia ADN debe tener el siguiente formato JSON: <br />
+POST → /mutant/ <br />
+```
+{ 
+   "dna":["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"] 
+}
+```
+
+Response:
+
+```
+  200 OK
+```
+
+ * Para entrar al servicio “/stats/” <br />
+Request: <br />
+GET  → /stats/ <br />
+
+http://localhost:8080/stats/ <br />
+
+Response: 200 (application/json)
+```
+  {"count_mutant_dna":4,"count_human_dna":1,"ratio":0.8}
+```
 
 ### Cobertura
 Ejecutando los test localmente con la herramienta Jacoco nos da 97%.
