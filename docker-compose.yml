@@ -15,7 +15,9 @@ services:
         depends_on:
             - db # This service depends on mysql. Start that first.
     db:
-        image: "postgres:11"
+        build:
+            context: .
+            dockerfile: Dockerfile-DataBase
         container_name: "postgres11"
         ports:
             - "5432:5432"
